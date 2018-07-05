@@ -98,6 +98,10 @@ func handleCORS(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
+	if q := req.URL.RawQuery; q != "" {
+		p += "?" + q
+	}
+
 	if req.Header.Get("Origin") == "" && req.Header.Get("X-Requested-With") == "" {
 		w.WriteHeader(http.StatusBadRequest)
 		fmt.Fprintf(w, "Error: Origin or X-Requested-With must be specified.")
