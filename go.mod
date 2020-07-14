@@ -1,4 +1,4 @@
-module github.com/geek1011/corsproxy
+module github.com/pgaskin/corsproxy
 
 go 1.12
 

@@ -53,7 +53,7 @@ DESCRIPTION
     These headers are set automatically when using XHR or fetch.
 
 ABOUT
-    Source Code - https://github.com/geek1011/corsproxy
+    Source Code - https://github.com/pgaskin/corsproxy
 `, "\t", "    ", -1), timeout, maxRedirects)
 
 var client = &http.Client{
